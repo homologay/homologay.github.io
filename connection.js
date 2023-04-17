@@ -29,3 +29,16 @@ function requestAndShowPermission() {
       }
    });
 }
+
+// on some browsers like safari or firefox notifications may be 
+// requested through a click event but not on page load
+$('#allow-push-notification').click(function () {
+    $('#allow-push-notification-bar').hide();
+    Notification.requestPermission().then(function (status) {
+        if (status === 'denied') {
+            // do nothing       
+        } else if (status === 'granted') {
+            showNotification();
+        }
+    });
+});
