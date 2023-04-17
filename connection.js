@@ -18,4 +18,4 @@ function notify() {
             showNotification();
         }
     });
-});
+}
