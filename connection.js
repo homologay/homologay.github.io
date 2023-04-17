@@ -8,11 +8,8 @@ if (permission === "granted") {
        alert("Use normal alert");
 }*/
 
+
 function showNotification() {   
-      // if (document.visibilityState === "visible") {
-      //        return;
-      // }   
-      //  var title = "joke";   
        icon = "blinkies/connection_established.gif"   
        var body = "not malware";   
        var notification = new Notification('joke', { body, icon });   
@@ -21,7 +18,6 @@ function showNotification() {
           window.parent.focus();
        }
 }
-
 function requestAndShowPermission() {
    Notification.requestPermission(function (permission) {
       if (permission === "granted") {
