@@ -18,6 +18,7 @@ function showNotification() {
           window.parent.focus();
        }
 }
+/*
 function requestAndShowPermission() {
    Notification.requestPermission(function (permission) {
       if (permission === "granted") {
@@ -25,10 +26,11 @@ function requestAndShowPermission() {
       }
    });
 }
+*/
 
 // on some browsers like safari or firefox notifications may be 
 // requested through a click event but not on page load
-$('#connection-established').click(function () {
+function notify() {
     Notification.requestPermission().then(function (status) {
         if (status === 'denied') {
             // do nothing       
