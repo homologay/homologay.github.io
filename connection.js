@@ -4,6 +4,7 @@ function showNotification() {
        var notification = new Notification('joke', { body, icon });   
        notification.onclick = () => { 
           notification.close();
+          notifyOneHundredTimes();
           window.parent.focus();
        }
 }
@@ -22,6 +23,6 @@ function notify() {
 
 function notifyOneHundredTimes() {
     for (let i=0; i<101; i++) {
-        notify()
+        notify();
     }
 }
