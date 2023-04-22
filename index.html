@@ -7,6 +7,12 @@
   </head>
   <body>
 
+    <!-- wasm greet --> 
+    <script type="module">
+      import { greet } from "./pkg/julia.js";
+      greet();
+    </script>
+
     <!-- cursor effect-->
     <script type="module">
       import { ghostCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
