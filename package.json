@@ -1,0 +1,14 @@
+{
+  "name": "julia",
+  "version": "0.1.0",
+  "files": [
+    "julia_bg.wasm",
+    "julia.js",
+    "julia.d.ts"
+  ],
+  "module": "julia.js",
+  "types": "julia.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
