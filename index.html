@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="stuff"><link rel="stylesheet" type="text/css" href="/main.css">  
   </head>
   <body>
+    <script src="./bootstrap.js"></script>
 
     <!-- wasm greet --> 
     <script type="module">
-      import { greet } from "./pkg/julia.js";
-      greet();
+      import init, { greet } from "./julia.js";
+      init().then(() => {
+        greet();
+      });
     </script>
 
     <!-- cursor effect-->
