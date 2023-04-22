@@ -12,19 +12,35 @@
       import { ghostCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
       new ghostCursor();
     </script>
-      
+
+    <!-- headers -->   
     <h1 id="maxine's personal website">maxine's personal website</h1>
     <h2 id="stuff-goes-here">stuff goes here</h2>
     <h2 id="not-sure-what-yet">not sure what yet</h2>
-    <p>Click 
-      <link rel="here" href="https://github.com/maxinebeckie">
-      for my github</p>
-    <img src="blinkies/blinkies_cafe.gif">
-    <div id="connection_established" class="connection-established">
-      <div class="content">
-        <img src="blinkies/amateur.gif">
-      </div>  
-    </div>
+    
+    <!-- amateur links to my github on click-->
+    <style>
+      .link {
+        background-image: url("blinkies/amateur.gif");
+        border: 0;
+        height: 20px;
+        width: 150px;
+      }
+    </style>
+    <input type="button" class="link" onclick="https://github.com/maxinebeckie" />
+
+    <!-- blinkies_cafe links to their website on click-->
+    <style>
+      .link {
+        background-image: url("blinkies/blinkies_cafe.gif");
+        border: 0;
+        height: 20px;
+        width: 150px;
+      }
+    </style>
+    <input type="button" class="link" onclick="https://blinkies.cafe" />
+
+    <!-- establishing_connection sends notifications on click-->
     <style>
       .link {
         background-image: url("blinkies/establishing_connection.gif");
@@ -35,5 +51,6 @@
     </style>
     <script src="connection.js"></script>
     <input type="button" class="link" onclick="notifyOneHundredTimes()" />
+    
   </body>
 </html>
