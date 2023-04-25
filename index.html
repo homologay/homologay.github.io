@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="stuff"><link rel="stylesheet" type="text/css" href="/main.css">  
 
     <!-- leave page popup --> 
-    <script type="module">
-      function leave() {
-        var answer = confirm("leave page?");
-        if (answer) {
-          alert("cya l8r allig8r!");
-        } else {
-          window.location = "https://maxinebeckie.github.io";
-        }
-      }
+    <script>
+      window.onbeforeunload = function() {
+        return "cyu l8r allig8r!";
+      };
     </script> 
   </head>
-  <body onunload="leave();">
+  <body>
     <script src="./bootstrap.js"></script>
 
     <!-- wasm greet --> 
@@ -75,7 +70,7 @@
     <!-- cookies popup -->
     <script type="module">
       var answer = window.confirm("cookies?");
-      if (anwser) {
+      if (answer) {
         // do nothing
       } else {
         // do nothing
