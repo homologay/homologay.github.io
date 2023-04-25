@@ -4,8 +4,20 @@
     <meta charset="utf-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="stuff"><link rel="stylesheet" type="text/css" href="/main.css">  
+
+    <!-- leave page popup --> 
+    <script type="module">
+      function leave() {
+        var answer = confirm("leave page?");
+        if (answer) {
+          alert("cya l8r allig8r!");
+        } else {
+          window.location = "https://maxinebeckie.github.io";
+        }
+      }
+    </script> 
   </head>
-  <body>
+  <body onunload="leave();">
     <script src="./bootstrap.js"></script>
 
     <!-- wasm greet --> 
@@ -69,5 +81,6 @@
         // do nothing
       }
     </script>    
+
   </body>
 </html>
