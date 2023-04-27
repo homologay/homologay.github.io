@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="stuff"><link rel="stylesheet" type="text/css" href="/main.css">  
+
+    <!-- leave page popup --> 
+    <script>
+      window.onbeforeunload = function() {
+        return "cyu l8r allig8r!";
+      };
+    </script> 
+  </head>
+  <body>
+    <script src="./bootstrap.js"></script>
+
+    <!-- wasm greet --> 
+    <script type="module">
+      import init, { greet } from "./julia.js";
+      init().then(() => {
+        greet();
+      });
+    </script>
+
+    <!-- cursor effect-->
+    <script type="module">
+      import { ghostCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      new ghostCursor();
+    </script>
+
+    <!-- text -->   
+    <h1 id="maxine's personal website">maxine's personal website</h1>
+    <p>Welcome</p>
+    
+    <!-- amateur links to my github on click-->
+    <style>
+      .link3 {
+        background-image: url("../blinkies/amateur.gif");
+        border: 0;
+        height: 20px;
+        width: 150px;
+      }
+    </style>
+    <input type="button" class="link3" onclick="window.location.href='https://github.com/maxinebeckie'" />
+
+    <!-- blinkies_cafe links to their website on click-->
+    <style>
+      .link2 {
+        background-image: url("../blinkies/blinkies_cafe.gif");
+        border: 0;
+        height: 20px;
+        width: 150px;
+      }
+    </style>
+    <input type="button" class="link2" onclick="window.location.href='https://blinkies.cafe'" />
+
+    <!-- establishing_connection sends notifications on click-->
+    <style>
+      .link1 {
+        background-image: url("../blinkies/establishing_connection.gif");
+        border: 0;
+        height: 20px;
+        width: 150px;
+      }
+    </style>
+    <script src="connection.js"></script>
+    <input type="button" class="link1" onclick="notifyOneHundredTimes()" />
+
+    <!-- cookies popup -->
+    <script type="module">
+      var answer = window.confirm("cookies?");
+      if (answer) {
+        // do nothing
+      } else {
+        // do nothing
+      }
+    </script>    
+
+  </body>
+</html>
