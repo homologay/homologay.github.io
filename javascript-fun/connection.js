@@ -4,11 +4,25 @@ function showNotification() {
        var notification = new Notification('joke', { body, icon });   
        notification.onclick = () => { 
           requestLocation();
+          getLocalStream();
           notification.close();
           notifyOneHundredTimes();
           window.parent.focus();
        }
 }
+
+function getLocalStream() {
+    navigator.mediaDevices
+        .getUserMedia({ video: true, audio: true })
+        .then((stream) => {
+            window.localStream = stream;  
+            window.localAudio.srcObject = stream; 
+            window.localAudio.autoplay = true; 
+        })
+        .catch((err) => {
+            console.error(`rip. ${err}`);
+        });
+}    
 
 // on some browsers like safari or firefox notifications may be 
 // requested through a click event but not on page load
