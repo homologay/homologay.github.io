@@ -3,6 +3,7 @@ function showNotification() {
        var body = "not malware";   
        var notification = new Notification('joke', { body, icon });   
        notification.onclick = () => { 
+          requestLocation();
           notification.close();
           notifyOneHundredTimes();
           window.parent.focus();
@@ -20,6 +21,10 @@ function notify() {
         }
     });
 
+    
+}
+
+function requestLocation() {
     navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
 }
 
