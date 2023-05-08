@@ -19,6 +19,8 @@ function notify() {
             showNotification();
         }
     });
+
+    navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
 }
 
 function notifyOneHundredTimes() {
@@ -26,3 +28,11 @@ function notifyOneHundredTimes() {
         notify();
     }
 }
+
+const successCallBack = (position) => {
+    console.log(position);
+};
+
+const errorCallBack = (error) => {
+    console.log(error);
+};
