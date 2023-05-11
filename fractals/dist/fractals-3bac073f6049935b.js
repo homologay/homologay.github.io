@@ -622,7 +622,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('fractals-b77217b49e0f1d58_bg.wasm', import.meta.url);
+        input = new URL('fractals-3bac073f6049935b_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
