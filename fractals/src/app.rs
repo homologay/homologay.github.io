@@ -4,8 +4,8 @@ use yew::prelude::*;
 pub fn app() -> Html {
     html! {
         <main>
-            <img class="logo" src="https://yew.rs/img/logo.png" alt="Yew logo" />
-            <h1>{ "uhhhh" }</h1>
+            <img class="logo" src="./src/under_construction.jpg" alt="under construction sign" />
+            <h1>{ "under construction" }</h1>
             <span class="subtitle">{ "<3" }<i class="heart" /></span>
         </main>
     }
