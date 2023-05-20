@@ -17,3 +17,11 @@ h1 {
  font-size:32px;
  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
+
+html {
+ scroll-behavior: smooth;
+}
+
+* {
+ box-sizing: border-box;
+}
