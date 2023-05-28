@@ -22,6 +22,18 @@ export function greet() {
     wasm.greet();
 }
 
+/**
+*/
+export function get_ip_addr_of_request() {
+    wasm.get_ip_addr_of_request();
+}
+
+/**
+*/
+export function ping_ip_addr() {
+    wasm.ping_ip_addr();
+}
+
 async function load(module, imports) {
     if (typeof Response === 'function' && module instanceof Response) {
         if (typeof WebAssembly.instantiateStreaming === 'function') {

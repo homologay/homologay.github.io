@@ -18,3 +18,13 @@ extern {
 pub fn greet() {
     alert("hello");
 }
+
+#[wasm_bindgen]
+pub fn get_ip_addr_of_request() {
+    todo!();
+}
+
+#[wasm_bindgen]
+pub fn ping_ip_addr() {
+    todo!();
+}

@@ -3,12 +3,20 @@
 /**
 */
 export function greet(): void;
+/**
+*/
+export function get_ip_addr_of_request(): void;
+/**
+*/
+export function ping_ip_addr(): void;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
   readonly greet: () => void;
+  readonly get_ip_addr_of_request: () => void;
+  readonly ping_ip_addr: () => void;
 }
 
 export type SyncInitInput = BufferSource | WebAssembly.Module;

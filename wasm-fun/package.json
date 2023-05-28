@@ -1,5 +1,8 @@
 {
   "name": "julia",
+  "collaborators": [
+    "Maxine Beckie"
+  ],
   "version": "0.1.0",
   "files": [
     "julia_bg.wasm",
