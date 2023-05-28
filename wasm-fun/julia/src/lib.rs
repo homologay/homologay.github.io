@@ -1,6 +1,14 @@
 mod utils;
 
-extern crate wasm_bindgen;
+
+//kjidea: 
+//
+//     - get ip address in javascript
+//     - pass it to program
+//     - use `ipinfo` crate to get location, ASN, company data, carrier details
+//     - pass back to js and present in pretty html to client
+
+use wasm_bindgen;
 use wasm_bindgen::prelude::*;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
@@ -28,3 +36,10 @@ pub fn get_ip_addr_of_request() {
 pub fn ping_ip_addr() {
     todo!();
 }
+
+//! idea: 
+//
+//     - get ip address in javascript
+//     - pass it to program
+//     - use `ipinfo` crate to get location, ASN, company data, carrier details
+//     - pass back to js and present in pretty html to client
