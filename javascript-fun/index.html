@@ -38,27 +38,19 @@
 
 
     <p id="os_name"></p>
-    <p id="nav_app"></p>
     <script>
-        var OSName = "unknown";
         var navApp = navigator.userAgent.toLowerCase();
         switch (true) {
           case (navApp.indexOf("win") != -1):
-            OSName = "windows";
+            document.getElementById("os_name").innerHTML = "hello gamer! Thx 4 using windows --mocrisorft";
             break;
           case (navApp.indexOf("mac") != -1):
-            OSName = "apple";
+            document.getElementById("os_name").innerHTML = "u are using macOS. how bourgeois!";
             break;
-          case (navApp.indexOf("linux") != -1):
-            OSName = "linux";
+         case (navApp.indexOf("linux") != -1):
+            document.getElementById("os_name").innerHTML = "Hello fellow linux nerd! Or VPN user! linux is free, if you don't value your free time! ha ha ha";
             break;
-          case (navApp.indexOf("x11") != -1):
-            OSName = "unix";
-            break;
-        }
-        console.log(OSName, navApp);   
-        document.getElementById("os_name").innerHTML = OSName;
-        document.getElementById("nav_app").innerHTML = navApp;
+        }        
      </script>
 
     <!-- cookies popup -->
