@@ -47,10 +47,6 @@ a:active {
   color: #ff4de6;
 }
 
-a:link, a:visited {
-  text-decoration: none;
-}
-
 * {
  box-sizing: border-box;
 }
