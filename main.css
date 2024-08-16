@@ -1,8 +1,8 @@
 body {
- font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-family: "Comic Sans MS", "Comic Sans", "Arial";
  color: #fdfdfd;
  background-color: #1d002b;
- font-size: 16px;
+ font-size: 26px;
  margin: 2em auto;
  max-width: 800px;
  padding: 1em;
@@ -13,14 +13,14 @@ body {
 h1 {
  font-family: Open Sans,Arial;
  color: #ff01b1;
- font-size: 32px;
+ font-size: 42px;
  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
 
 h2 {
  font-family: Open Sans, Arial;
  color: #ff01b1;
- font-size: 28px;
+ font-size: 38px;
  background-image: -webkit-linear-gradient(top, #111, #ff01b1);
   background-image: -moz-linear-gradient(top, #111, #ff01b1);
   background-image: -ms-linear-gradient(top, #111, #ff01b1);
