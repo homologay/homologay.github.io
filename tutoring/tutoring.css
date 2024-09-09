@@ -1,0 +1,52 @@
+body {
+ font-family: "Comic Sans MS", "Comic Sans", "Arial";
+ color: #fdfdfd;
+ background-color: #1d002b;
+ font-size: 26px;
+ margin: 2em auto;
+ max-width: 800px;
+ padding: 1em;
+ line-height: 1.3;
+ text-align: justify
+}
+
+h1 {
+ font-family: Open Sans,Arial;
+ color: #ff01b1;
+ font-size: 42px;
+ text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+
+h2 {
+ font-family: Open Sans, Arial;
+ color: #ff01b1;
+ font-size: 38px;
+ background-image: -webkit-linear-gradient(top, #111, #ff01b1);
+  background-image: -moz-linear-gradient(top, #111, #ff01b1);
+  background-image: -ms-linear-gradient(top, #111, #ff01b1);
+  background-image: -o-linear-gradient(top, #111, #ff01b1);
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+a:link {
+  color: #b6b0ff;
+}
+
+a:visited {
+  color: #eebdff;
+}
+
+a:hover {
+  color: #ff7538;
+}
+
+a:active {
+  color: #ff4de6;
+}
+
+* {
+ box-sizing: border-box;
+}
